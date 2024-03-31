@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" styleClass="gradient-background" stylesheets="@../css/dashboard%20admin.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ReservationsController">
+   <top>
+      <HBox alignment="CENTER" prefHeight="47.0" prefWidth="900.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="58.0" prefWidth="171.0" styleClass="shadow" stylesheets="" text="ADMIN DASHBOARD" textFill="WHITE">
+               <font>
+                  <Font name="Barlow Condensed Medium" size="20.0" />
+               </font>
+            </Label>
+            <Pane maxHeight="-Infinity" prefHeight="1.0" prefWidth="200.0" styleClass="line-color" stylesheets="" HBox.hgrow="ALWAYS" />
+            <FontAwesomeIcon fill="WHITE" glyphName="GEAR" size="30" />
+            <HBox alignment="CENTER" prefHeight="58.0" prefWidth="22.0">
+               <children>
+                  
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox alignment="TOP_CENTER" prefHeight="559.0" prefWidth="200.0" styleClass="container" stylesheets="" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+         <children>
+            <HBox alignment="CENTER" prefHeight="82.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="80.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                     <image>
+                        <Image url="@../lasttest/oo.png" />
+                     </image>
+                  </ImageView>
+                  <VBox alignment="CENTER" prefHeight="81.0" prefWidth="126.0">
+                     <children>
+                        <Label prefHeight="18.0" prefWidth="118.0" styleClass="shadow" text="ADMIN X" textFill="WHITE">
+                           <font>
+                              <Font name="Barlow Condensed Medium" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="18.0" prefWidth="118.0" styleClass="shadow" text="Manager" textFill="WHITE">
+                           <font>
+                              <Font name="Barlow Condensed Medium" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="1.0" prefWidth="180.0" styleClass="line-color" stylesheets="">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Pane>
+            <VBox prefHeight="365.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" styleClass="button-container-mouse-moved" stylesheets="">
+                     <children>
+                        <FontAwesomeIcon fill="WHITE" glyphName="TABLE" size="22.5" />
+                        <Button fx:id="dash" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#ClickDash" prefWidth="122.0" styleClass="buttonStyle" stylesheets="@../css/dashboard%20admin.css">
+                           <graphic>
+                              <Label prefHeight="26.0" prefWidth="100.0" styleClass="shadow" text="Dashboard" textFill="WHITE">
+                                 <font>
+                                    <Font name="Barlow Condensed Medium" size="20.0" />
+                                 </font>
+                              </Label>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" styleClass="button-container-mouse-moved" stylesheets="">
+                     <children>
+                        <FontAwesomeIcon fill="WHITE" glyphName="USERS" size="22.5" />
+                        <Button fx:id="btnclt" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#Clickclt" prefWidth="122.0" styleClass="buttonStyle" stylesheets="@../css/dashboard%20admin.css">
+                           <graphic>
+                              <Label prefHeight="26.0" prefWidth="100.0" styleClass="shadow" text="Clients" textFill="WHITE">
+                                 <font>
+                                    <Font name="Barlow Condensed Medium" size="20.0" />
+                                 </font>
+                              </Label>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" styleClass="button-container-mouse-moved" stylesheets="">
+                     <children>
+                        <FontAwesomeIcon fill="WHITE" glyphName="USER" size="22.5" />
+                        <Button fx:id="btnpers" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#Clickpers" prefWidth="122.0" styleClass="buttonStyle" stylesheets="@../css/dashboard%20admin.css">
+                           <graphic>
+                              <Label prefHeight="26.0" prefWidth="100.0" styleClass="shadow" text="Personnels" textFill="WHITE">
+                                 <font>
+                                    <Font name="Barlow Condensed Medium" size="20.0" />
+                                 </font>
+                              </Label>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" styleClass="button-container-mouse-moved" stylesheets="">
+                     <children>
+                        <FontAwesomeIcon fill="WHITE" glyphName="ENVELOPE" size="22.5" />
+                        <Button fx:id="btnanmx" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#ClickAnmx" prefHeight="38.0" prefWidth="122.0" styleClass="buttonStyle" stylesheets="@../css/dashboard%20admin.css">
+                           <graphic>
+                              <Label prefHeight="29.0" prefWidth="100.0" styleClass="shadow" text="Animaux" textFill="WHITE">
+                                 <font>
+                                    <Font name="Barlow Condensed Medium" size="20.0" />
+                                 </font>
+                              </Label>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" stylesheets="">
+                     <children>
+                        <FontAwesomeIcon fill="WHITE" glyphName="ENVELOPE" size="22.5" />
+                        <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="38.0" prefWidth="122.0" styleClass="buttonStyle" stylesheets="@../css/dashboard%20admin.css">
+                           <graphic>
+                              <Label prefHeight="29.0" prefWidth="100.0" styleClass="shadow" text="Reservations" textFill="WHITE">
+                                 <font>
+                                    <Font name="Barlow Condensed Medium" size="20.0" />
+                                 </font>
+                              </Label>
+                           </graphic>
+                        </Button>
+                     </children>
+                     <styleClass>
+                        <String fx:value="button-container-mouse-moved" />
+                        <String fx:value="selected-button-container" />
+                     </styleClass>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" styleClass="button-container-mouse-moved" stylesheets="">
+                     <children>
+                        <FontAwesomeIcon fill="WHITE" glyphName="ENVELOPE" size="22.5" />
+                        <Button fx:id="btnSrvc" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#ClickService" prefHeight="38.0" prefWidth="122.0" styleClass="buttonStyle" stylesheets="@../css/dashboard%20admin.css">
+                           <graphic>
+                              <Label prefHeight="29.0" prefWidth="100.0" styleClass="shadow" text="Services" textFill="WHITE">
+                                 <font>
+                                    <Font name="Barlow Condensed Medium" size="20.0" />
+                                 </font>
+                              </Label>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" styleClass="button-container-mouse-moved" stylesheets="">
+                     <children>
+                        <FontAwesomeIcon fill="WHITE" glyphName="ENVELOPE" size="22.5" />
+                        <Button fx:id="btnGrd" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#ClickGarderie" prefHeight="38.0" prefWidth="122.0" styleClass="buttonStyle" stylesheets="@../css/dashboard%20admin.css">
+                           <graphic>
+                              <Label prefHeight="29.0" prefWidth="100.0" styleClass="shadow" text="Galerie" textFill="WHITE">
+                                 <font>
+                                    <Font name="Barlow Condensed Medium" size="20.0" />
+                                 </font>
+                              </Label>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" styleClass="button-container-mouse-moved" stylesheets="">
+                     <children>
+                        <FontAwesomeIcon fill="WHITE" glyphName="GEAR" size="22.5" />
+                        <Button fx:id="Logout" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#Clicklogout" prefWidth="122.0" styleClass="buttonStyle" stylesheets="@../css/dashboard%20admin.css">
+                           <graphic>
+                              <Label prefHeight="26.0" prefWidth="100.0" styleClass="shadow" text="Log Out" textFill="WHITE">
+                                 <font>
+                                    <Font name="Barlow Condensed Medium" size="20.0" />
+                                 </font>
+                              </Label>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="table" prefHeight="426.0" prefWidth="669.0">
+              <columns>
+                <TableColumn fx:id="IdReservation" prefWidth="84.80000001192093" text="Id Reseration" />
+                <TableColumn fx:id="DateDebut" prefWidth="92.0" text="Date Debut" />
+                  <TableColumn fx:id="DateFin" minWidth="8.0" prefWidth="93.59999084472656" text="Date Fin" />
+                  <TableColumn fx:id="PrixNuite" minWidth="6.4000244140625" prefWidth="117.5999755859375" text="Prix Par Nuite" />
+                  <TableColumn fx:id="idClient" minWidth="6.4000244140625" prefWidth="100.00006103515625" text="idClient" />
+                  <TableColumn fx:id="listService" minWidth="6.4000244140625" prefWidth="180.79998779296875" text="Liste Service" />
+              </columns>
+            </TableView>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#ajouterReservation" prefWidth="125.0" styleClass="button-raised" stylesheets="@../css/dashboard%20admin.css">
+                     <graphic>
+                        <Label text="Ajouter">
+                           <font>
+                              <Font name="Barlow Condensed Regular" size="20.0" />
+                           </font>
+                        </Label>
+                     </graphic></Button>
+                  <Button mnemonicParsing="false" onAction="#supprimerReservation" prefWidth="125.0" styleClass="button-raised" stylesheets="@../css/dashboard%20admin.css">
+                     <graphic>
+                        <Label text="Supprimer">
+                           <font>
+                              <Font name="Barlow Condensed Regular" size="20.0" />
+                           </font>
+                        </Label>
+                     </graphic></Button>
+                  <Button mnemonicParsing="false" onAction="#updateReservation" prefWidth="125.0" styleClass="button-raised" stylesheets="@../css/dashboard%20admin.css">
+                     <graphic>
+                        <Label text="Modifier">
+                           <font>
+                              <Font name="Barlow Condensed Regular" size="20.0" />
+                           </font>
+                        </Label>
+                     </graphic></Button>
+               </children>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets right="10.0" top="10.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+</BorderPane>

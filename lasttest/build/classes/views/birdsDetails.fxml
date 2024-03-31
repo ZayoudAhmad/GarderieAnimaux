@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane id="AnchorPane" prefHeight="395.0" prefWidth="558.0" styleClass="gradient-background" stylesheets="@../css/Style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CatDetailController">
+   <children>
+      <Label layoutX="274.0" layoutY="20.0" text="Birds" textFill="#692727" underline="true">
+         <font>
+            <Font name="Bookman Old Style Bold" size="43.0" />
+         </font>
+      </Label>
+      <TextFlow layoutX="200.0" layoutY="97.0" prefHeight="61.0" prefWidth="342.0">
+         <children>
+            <Text fill="#11ff00" strokeType="OUTSIDE" strokeWidth="0.0" text="Species: ">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="irds encompass a vast array of species, each with unique characteristics, from colorful parrots to melodious songbirds like canaries and finches." wrappingWidth="245.0390625">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+         </children>
+      </TextFlow>
+      <TextFlow layoutX="199.0" layoutY="160.0" prefHeight="61.0" prefWidth="342.0">
+         <children>
+            <Text fill="#11ff00" strokeType="OUTSIDE" strokeWidth="0.0" text="Average Lifespan:">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="The lifespan of birds varies significantly by species. Small birds like canaries may live around 7-10 years, while larger parrot species can have lifespans of 20-80 years or more." wrappingWidth="245.0390625">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+         </children>
+      </TextFlow>
+      <TextFlow layoutX="199.0" layoutY="231.0" prefHeight="61.0" prefWidth="342.0">
+         <children>
+            <Text fill="#11ff00" strokeType="OUTSIDE" strokeWidth="0.0" text="Communication:">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text=" Birds communicate through vocalizations, songs, and body language. Some species are highly vocal, using intricate calls to convey messages or establish territory." wrappingWidth="245.0390625">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+         </children>
+      </TextFlow>
+      <TextFlow layoutX="200.0" layoutY="306.0" prefHeight="61.0" prefWidth="342.0">
+         <children>
+            <Text fill="#11ff00" strokeType="OUTSIDE" strokeWidth="0.0" text="Health Care: ">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Proper bird care involves providing a balanced diet suitable for the species, maintaining a clean environment, and offering mental stimulation through toys and interaction." wrappingWidth="245.0390625">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+         </children>
+      </TextFlow>
+      <ImageView fitHeight="288.0" fitWidth="162.0" layoutX="22.0" layoutY="100.0">
+         <image>
+            <Image url="@../lasttest/birdsDetail.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

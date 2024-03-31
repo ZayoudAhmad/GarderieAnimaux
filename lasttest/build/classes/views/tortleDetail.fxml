@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane id="AnchorPane" prefHeight="395.0" prefWidth="558.0" styleClass="gradient-background" stylesheets="@../css/Style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CatDetailController">
+   <children>
+      <Label layoutX="274.0" layoutY="20.0" text="Tortle" textFill="#692727" underline="true">
+         <font>
+            <Font name="Bookman Old Style Bold" size="43.0" />
+         </font>
+      </Label>
+      <TextFlow layoutX="200.0" layoutY="97.0" prefHeight="61.0" prefWidth="342.0">
+         <children>
+            <Text fill="#11ff00" strokeType="OUTSIDE" strokeWidth="0.0" text="Species:">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Turtles encompass a diverse group of species, each with unique characteristics, shell types, and habitat preferences." wrappingWidth="245.0390625">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+         </children>
+      </TextFlow>
+      <TextFlow layoutX="199.0" layoutY="156.0" prefHeight="61.0" prefWidth="342.0">
+         <children>
+            <Text fill="#11ff00" strokeType="OUTSIDE" strokeWidth="0.0" text="Average Lifespan:">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="The average lifespan of a turtle varies widely by species. Some smaller turtles may live around 20 years, while larger species can exceed 100 years with proper care." wrappingWidth="245.0390625">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+         </children>
+      </TextFlow>
+      <TextFlow layoutX="199.0" layoutY="231.0" prefHeight="61.0" prefWidth="342.0">
+         <children>
+            <Text fill="#11ff00" strokeType="OUTSIDE" strokeWidth="0.0" text="Communication:">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Turtles are generally not known for vocal communication. They rely on body language and certain behaviors to convey their feelings or needs." wrappingWidth="245.0390625">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+         </children>
+      </TextFlow>
+      <TextFlow layoutX="201.0" layoutY="299.0" prefHeight="61.0" prefWidth="342.0">
+         <children>
+            <Text fill="#11ff00" strokeType="OUTSIDE" strokeWidth="0.0" text="Health Care: ">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Proper turtle care involves providing a suitable habitat with the right temperature, lighting, and access to water. A balanced diet that matches the species' requirements, including commercial turtle pellets and fresh vegetables, contributes to their overall well-being." wrappingWidth="245.0390625">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+         </children>
+      </TextFlow>
+      <ImageView fitHeight="293.0" fitWidth="169.0" layoutX="13.0" layoutY="98.0">
+         <image>
+            <Image url="@../lasttest/tortledetail.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

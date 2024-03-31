@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane id="AnchorPane" prefHeight="395.0" prefWidth="558.0" styleClass="gradient-background" stylesheets="@../css/Style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CatDetailController">
+   <children>
+      <Label layoutX="274.0" layoutY="20.0" text="Duck" textFill="#692727" underline="true">
+         <font>
+            <Font name="Bookman Old Style Bold" size="43.0" />
+         </font>
+      </Label>
+      <TextFlow layoutX="200.0" layoutY="97.0" prefHeight="61.0" prefWidth="342.0">
+         <children>
+            <Text fill="#11ff00" strokeType="OUTSIDE" strokeWidth="0.0" text="Breed :">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Ducks come in various breeds, each with unique characteristics such as size, color, and feather patterns. Common breeds include Pekin, Mallard, and Indian Runner." wrappingWidth="245.0390625">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+         </children>
+      </TextFlow>
+      <TextFlow layoutX="199.0" layoutY="156.0" prefHeight="61.0" prefWidth="342.0">
+         <children>
+            <Text fill="#11ff00" strokeType="OUTSIDE" strokeWidth="0.0" text="Average Lifespan:">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="The average lifespan of a duck is around 5 to 10 years, depending on the species and living conditions." wrappingWidth="245.0390625">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+         </children>
+      </TextFlow>
+      <TextFlow layoutX="199.0" layoutY="218.0" prefHeight="61.0" prefWidth="342.0">
+         <children>
+            <Text fill="#11ff00" strokeType="OUTSIDE" strokeWidth="0.0" text="Communication:">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Ducks communicate through quacking, hissing, and body language. Different vocalizations convey various messages, from expressing contentment to signaling danger." wrappingWidth="245.0390625">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+         </children>
+      </TextFlow>
+      <TextFlow layoutX="201.0" layoutY="299.0" prefHeight="61.0" prefWidth="342.0">
+         <children>
+            <Text fill="#11ff00" strokeType="OUTSIDE" strokeWidth="0.0" text="Health Care: ">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Maintaining a duck's health involves providing a balanced diet with a mix of grains, vegetables, and aquatic plants. Access to clean water for swimming and proper hygiene is crucial." wrappingWidth="245.0390625">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+         </children>
+      </TextFlow>
+      <ImageView fitHeight="285.0" fitWidth="158.0" layoutX="27.0" layoutY="99.0">
+         <image>
+            <Image url="@../lasttest/duckdetails.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

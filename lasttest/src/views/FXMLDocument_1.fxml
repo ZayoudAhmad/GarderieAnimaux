@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" styleClass="gradient-background" stylesheets="@../css/dashboard%20admin.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.FXMLDocumentController">
+   <top>
+      <HBox alignment="CENTER" prefHeight="47.0" prefWidth="900.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="58.0" prefWidth="171.0" styleClass="shadow" stylesheets="@Style.css" text="ADMIN DASHBOARD" textFill="WHITE">
+               <font>
+                  <Font name="Barlow Condensed Medium" size="20.0" />
+               </font>
+            </Label>
+            <Pane maxHeight="-Infinity" prefHeight="1.0" prefWidth="200.0" styleClass="line-color" stylesheets="@Style.css" HBox.hgrow="ALWAYS" />
+            <FontAwesomeIcon fill="WHITE" glyphName="GEAR" size="30" />
+            <HBox alignment="CENTER" prefHeight="58.0" prefWidth="22.0">
+               <children>
+                  
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox alignment="TOP_CENTER" prefHeight="559.0" prefWidth="200.0" styleClass="container" stylesheets="@Style.css" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+         <children>
+            <HBox alignment="CENTER" prefHeight="82.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="80.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                     <image>
+                        <Image url="@../lasttest/oo.png" />
+                     </image>
+                  </ImageView>
+                  <VBox alignment="CENTER" prefHeight="81.0" prefWidth="126.0">
+                     <children>
+                        <Label prefHeight="18.0" prefWidth="118.0" styleClass="shadow" stylesheets="@Style.css" text="ADMIN X" textFill="WHITE">
+                           <font>
+                              <Font name="Barlow Condensed Medium" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="18.0" prefWidth="118.0" styleClass="shadow" stylesheets="@Style.css" text="Manager" textFill="WHITE">
+                           <font>
+                              <Font name="Barlow Condensed Medium" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="1.0" prefWidth="180.0" styleClass="line-color" stylesheets="@Style.css">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Pane>
+            <VBox prefHeight="365.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="10.0" stylesheets="@Style.css">
+                     <children>
+                        <FontAwesomeIcon fill="WHITE" glyphName="TABLE" size="22.5" />
+                        <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="34.0" prefWidth="122.0" styleClass="buttonStyle" stylesheets="@../css/dashboard%20admin.css">
+                           <graphic>
+                              <Label prefHeight="26.0" prefWidth="86.0" styleClass="shadow" stylesheets="@Style.css" text="Dashboard" textFill="WHITE">
+                                 <font>
+                                    <Font name="Barlow Condensed Medium" size="20.0" />
+                                 </font>
+                              </Label>
+                           </graphic>
+                        </Button>
+                     </children>
+                     <styleClass>
+                        <String fx:value="button-container-mouse-moved" />
+                        <String fx:value="selected-button-container" />
+                     </styleClass>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="10.0" styleClass="button-container-mouse-moved" stylesheets="@../css/dashboard%20admin.css">
+                     <children>
+                        <FontAwesomeIcon fill="WHITE" glyphName="USERS" size="22.5" />
+                        <Button fx:id="btnclt" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#Clickclt" prefHeight="38.0" prefWidth="122.0" styleClass="buttonStyle" stylesheets="@../css/dashboard%20admin.css">
+                           <graphic>
+                              <Label prefHeight="26.0" prefWidth="86.0" styleClass="shadow" stylesheets="@Style.css" text="Clients" textFill="WHITE">
+                                 <font>
+                                    <Font name="Barlow Condensed Medium" size="20.0" />
+                                 </font>
+                              </Label>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="10.0" styleClass="button-container-mouse-moved" stylesheets="@Style.css">
+                     <children>
+                        <FontAwesomeIcon fill="WHITE" glyphName="USER" size="22.5" />
+                        <Button fx:id="btnpers" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#Clickpers" prefHeight="38.0" prefWidth="122.0" styleClass="buttonStyle" stylesheets="@../css/dashboard%20admin.css">
+                           <graphic>
+                              <Label prefHeight="26.0" prefWidth="86.0" styleClass="shadow" stylesheets="@Style.css" text="Personnels" textFill="WHITE">
+                                 <font>
+                                    <Font name="Barlow Condensed Medium" size="20.0" />
+                                 </font>
+                              </Label>
+                           </graphic>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="10.0" styleClass="button-container-mouse-moved" stylesheets="@Style.css">
+                     <children>
+                        <FontAwesomeIcon fill="WHITE" glyphName="ENVELOPE" size="22.5" />
+                        <Button fx:id="btnanm" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#ClickAnmx" prefHeight="38.0" prefWidth="122.0" styleClass="buttonStyle" stylesheets="@../css/dashboard%20admin.css">
+                           <graphic>
+                              <Label prefHeight="30.0" prefWidth="106.0" styleClass="shadow" stylesheets="@Style.css" text="Animaux" textFill="WHITE">
+                                 <font>
+                                    <Font name="Barlow Condensed Medium" size="20.0" />
+                                 </font>
+                              </Label>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="10.0" styleClass="button-container-mouse-moved" stylesheets="@Style.css">
+                     <children>
+                        <FontAwesomeIcon fill="WHITE" glyphName="LIST" size="22.5" />
+                        <Button fx:id="btnrsv" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#ClickReservation" prefHeight="38.0" prefWidth="122.0" styleClass="buttonStyle" stylesheets="@../css/dashboard%20admin.css">
+                           <graphic>
+                              <Label prefHeight="26.0" prefWidth="112.0" styleClass="shadow" stylesheets="@Style.css" text="Reservations" textFill="WHITE">
+                                 <font>
+                                    <Font name="Barlow Condensed Medium" size="20.0" />
+                                 </font>
+                              </Label>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" styleClass="button-container-mouse-moved" stylesheets="@Style.css">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="10.0" styleClass="button-container-mouse-moved" stylesheets="@Style.css">
+                           <children>
+                              <FontAwesomeIcon fill="WHITE" glyphName="LIST" size="22.5" />
+                              <Button fx:id="btnSrvc" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#ClickService" prefHeight="38.0" prefWidth="122.0" styleClass="buttonStyle" stylesheets="@../css/dashboard%20admin.css">
+                                 <graphic>
+                                    <Label prefHeight="26.0" prefWidth="106.0" styleClass="shadow" stylesheets="@Style.css" text="Services" textFill="WHITE">
+                                       <font>
+                                          <Font name="Barlow Condensed Medium" size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children></HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="10.0" styleClass="button-container-mouse-moved" stylesheets="@Style.css">
+                     <children>
+                        <FontAwesomeIcon fill="WHITE" glyphName="IMAGE" size="22.5" />
+                        <Button fx:id="btnGrd" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#ClickGarderie" prefHeight="38.0" prefWidth="122.0" styleClass="buttonStyle" stylesheets="@../css/dashboard%20admin.css">
+                           <graphic>
+                              <Label prefHeight="26.0" prefWidth="112.0" styleClass="shadow" stylesheets="@Style.css" text="Garderie" textFill="WHITE">
+                                 <font>
+                                    <Font name="Barlow Condensed Medium" size="20.0" />
+                                 </font>
+                              </Label>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="10.0" styleClass="button-container-mouse-moved" stylesheets="@Style.css">
+                     <children>
+                        <FontAwesomeIcon fill="WHITE" glyphName="GEAR" size="22.5" />
+                        <Button fx:id="Logout" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#Clicklogout" prefHeight="38.0" prefWidth="122.0" styleClass="buttonStyle" stylesheets="@../css/dashboard%20admin.css">
+                           <graphic>
+                              <Label prefHeight="26.0" prefWidth="112.0" styleClass="shadow" stylesheets="@Style.css" text="Log out" textFill="WHITE">
+                                 <font>
+                                    <Font name="Barlow Condensed Medium" size="20.0" />
+                                 </font>
+                              </Label>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="20.0" top="10.0" />
+         </BorderPane.margin>
+         <children>
+            <VBox prefHeight="135.0" prefWidth="649.0" styleClass="container" stylesheets="@Style.css">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="124.0" prefWidth="649.0" spacing="20.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="109.0" prefWidth="150.0" spacing="20.0">
+                           <children>
+                              <Label prefHeight="18.0" prefWidth="118.0" styleClass="shadow" stylesheets="@Style.css" text="TOTAL CLIENTS" textFill="WHITE">
+                                 <font>
+                                    <Font name="Barlow Condensed Medium" size="20.0" />
+                                 </font>
+                              </Label>
+                              <FontAwesomeIcon fill="WHITE" glyphName="USERS" size="22.5" />
+                              <Label alignment="CENTER" prefHeight="39.0" prefWidth="118.0" styleClass="shadow" stylesheets="@Style.css" text="5000" textFill="WHITE">
+                                 <font>
+                                    <Font name="Barlow Condensed Medium" size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Pane maxHeight="-Infinity" prefHeight="80.0" prefWidth="1.0" styleClass="line-color" stylesheets="@Style.css" />
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="150.0" spacing="20.0">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="118.0" styleClass="shadow" stylesheets="@Style.css" text="REVENUE" textFill="WHITE">
+                                 <font>
+                                    <Font name="Barlow Condensed Medium" size="20.0" />
+                                 </font>
+                              </Label>
+                              <FontAwesomeIcon fill="WHITE" glyphName="ENVELOPE" size="22.5" />
+                              <Label alignment="CENTER" prefHeight="18.0" prefWidth="118.0" styleClass="shadow" stylesheets="@Style.css" text="1,000,000$" textFill="WHITE">
+                                 <font>
+                                    <Font name="Barlow Condensed Medium" size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Pane maxHeight="-Infinity" prefHeight="80.0" prefWidth="1.0" styleClass="line-color" stylesheets="@Style.css" />
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="150.0" spacing="20.0">
+                           <children>
+                              <Label prefHeight="18.0" prefWidth="118.0" styleClass="shadow" stylesheets="@Style.css" text="TOTAL SERVICES" textFill="WHITE">
+                                 <font>
+                                    <Font name="Barlow Condensed Medium" size="20.0" />
+                                 </font>
+                              </Label>
+                              <FontAwesomeIcon fill="WHITE" glyphName="LIST" size="22.5" />
+                              <Label alignment="CENTER" prefHeight="18.0" prefWidth="118.0" styleClass="shadow" stylesheets="@Style.css" text="15" textFill="WHITE">
+                                 <font>
+                                    <Font name="Barlow Condensed Medium" size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox prefHeight="202.0" prefWidth="649.0" spacing="20.0">
+               <children>
+                  <VBox prefHeight="202.0" prefWidth="352.0" styleClass="container" stylesheets="@Style.css" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label prefHeight="18.0" prefWidth="118.0" styleClass="shadow" stylesheets="@Style.css" text="REVENUE" textFill="WHITE">
+                           <font>
+                              <Font name="Barlow Condensed Medium" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <LineChart fx:id="lineChart">
+                          <xAxis>
+                            <CategoryAxis side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis side="LEFT" />
+                          </yAxis>
+                        </LineChart>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="201.0" prefWidth="312.0" styleClass="container" stylesheets="@Style.css" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label prefHeight="18.0" prefWidth="118.0" styleClass="shadow" stylesheets="@Style.css" text="DEPENSES" textFill="WHITE">
+                           <font>
+                              <Font name="Barlow Condensed Medium" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <PieChart fx:id="pieChart" labelLineLength="10.0" legendVisible="false" />
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="148.0" prefWidth="649.0" spacing="10.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="146.0" prefWidth="96.0" spacing="10.0" styleClass="container" stylesheets="@Style.css" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="18.0" prefWidth="118.0" styleClass="shadow" stylesheets="@Style.css" text="SERVICES" textFill="WHITE">
+                           <font>
+                              <Font name="Barlow Condensed Medium" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="nbrServices" alignment="CENTER" prefHeight="39.0" prefWidth="118.0" styleClass="shadow" stylesheets="@Style.css" text="5" textFill="WHITE">
+                           <font>
+                              <Font name="Barlow Condensed Medium" size="50.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0" styleClass="container" stylesheets="@Style.css" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="18.0" prefWidth="118.0" styleClass="shadow" stylesheets="@Style.css" text="ANIMALS" textFill="WHITE">
+                           <font>
+                              <Font name="Barlow Condensed Medium" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="nbrAnimals" alignment="CENTER" prefHeight="39.0" prefWidth="118.0" styleClass="shadow" stylesheets="@Style.css" text="200" textFill="WHITE">
+                           <font>
+                              <Font name="Barlow Condensed Medium" size="50.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0" styleClass="container" stylesheets="@Style.css" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="18.0" prefWidth="118.0" styleClass="shadow" stylesheets="@Style.css" text="CLIENTS" textFill="WHITE">
+                           <font>
+                              <Font name="Barlow Condensed Medium" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="nbrClients" alignment="CENTER" prefHeight="39.0" prefWidth="118.0" styleClass="shadow" stylesheets="@Style.css" text="50" textFill="WHITE">
+                           <font>
+                              <Font name="Barlow Condensed Medium" size="50.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children></HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

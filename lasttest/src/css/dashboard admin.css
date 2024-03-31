@@ -1,0 +1,52 @@
+.gradient-background {
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #155A8D, #00C89E);
+}
+.line-color {
+    -fx-background-color: #ffffff;
+    -fx-max-width:676px;
+    -fx-max-height:1px;
+      
+}
+.container {
+    -fx-background-color: rgba(255,255,255,0.2);
+    -fx-background-radius: 10;
+}
+.shadow {
+    -fx-effect: dropShadow(three-pass-box, rgba(0,0,0,0.2),10.0, 0.0, 0.0, 10.0);
+   
+}
+.buttonStyle{
+    -fx-background-color: transparent;
+}
+.selected-button-container {
+    -fx-background-color: rgba(255,255,255,0.15);
+}
+.button-container-mouse-moved:hover {
+    -fx-background-color: rgba(255,255,255,0.1);
+     -fx-cursor: hand;
+}
+.axis {
+    -fx-stroke: #fff;
+    -fx-fill: #fff;
+    -fx-font-size: 24;
+    -fx-tick-label-fill: #fff;
+}
+.default-color0.chart-pie{-fx-pie-color: transparent;}
+.default-color1.chart-pie{-fx-pie-color: transparent;}
+.default-color2.chart-pie{-fx-pie-color: transparent;}
+.default-color3.chart-pie{-fx-pie-color: transparent;}
+.chart-pie-label {
+    -fx-fill: #fff;
+    -fx-stroke: #fff;
+    -fx-font-size: 15;
+}
+.button-raised {
+    -fx-background-color: #F9F871; /* Button color */
+    -fx-text-fill: white; /* Text color */
+    -fx-border-radius: 5px; /* Border radius */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0); /* Drop shadow */
+}
+
+.button-raised:hover {
+    -fx-background-color: #45a049; /* Hovered button color */
+}

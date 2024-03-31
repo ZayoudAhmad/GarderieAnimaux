@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane id="AnchorPane" prefHeight="395.0" prefWidth="558.0" styleClass="gradient-background" stylesheets="@../css/Style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CatDetailController">
+   <children>
+      <Label layoutX="274.0" layoutY="20.0" text="Rabbit" textFill="#692727" underline="true">
+         <font>
+            <Font name="Bookman Old Style Bold" size="43.0" />
+         </font>
+      </Label>
+      <TextFlow layoutX="200.0" layoutY="97.0" prefHeight="61.0" prefWidth="342.0">
+         <children>
+            <Text fill="#11ff00" strokeType="OUTSIDE" strokeWidth="0.0" text="Breed:">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Rabbits come in various breeds, each with unique characteristics, including size, coat type, and color patterns." wrappingWidth="245.0390625">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+         </children>
+      </TextFlow>
+      <TextFlow layoutX="199.0" layoutY="156.0" prefHeight="61.0" prefWidth="342.0">
+         <children>
+            <Text fill="#11ff00" strokeType="OUTSIDE" strokeWidth="0.0" text="Average Lifespan:">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="The average lifespan of a rabbit is typically 7 to 12 years, with proper care and attention." wrappingWidth="245.0390625">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+         </children>
+      </TextFlow>
+      <TextFlow layoutX="199.0" layoutY="218.0" prefHeight="61.0" prefWidth="342.0">
+         <children>
+            <Text fill="#11ff00" strokeType="OUTSIDE" strokeWidth="0.0" text="Communication:">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Rabbits communicate through body language, thumping their hind legs, and making soft vocalizations. Understanding their behavior is crucial for addressing their needs." wrappingWidth="245.0390625">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+         </children>
+      </TextFlow>
+      <TextFlow layoutX="201.0" layoutY="299.0" prefHeight="61.0" prefWidth="342.0">
+         <children>
+            <Text fill="#11ff00" strokeType="OUTSIDE" strokeWidth="0.0" text="Health Care: ">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="To maintain a rabbit's health, provide a balanced diet rich in hay, vegetables, and pellets. Regular exercise, a clean living environment, and veterinary check-ups contribute to their overall well-being" wrappingWidth="245.0390625">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+         </children>
+      </TextFlow>
+      <ImageView fitHeight="295.0" fitWidth="176.0" layoutX="12.0" layoutY="95.0">
+         <image>
+            <Image url="@../lasttest/rabbitdetails.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

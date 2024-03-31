@@ -1,0 +1,38 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 26 nov. 2023, 14:04:01
+    Author     : Azertyy
+*/
+.sign-inn{
+    -fx-background-color:linear-gradient(from 25% 25% to 100% 100%, #155A8D, #00C89E)
+}
+.text-field{
+    -fx-background-color: transparent;
+    -fx-border-color:  #2c6eb5;
+    -fx-border-width:0px 0px 3px 0px ;
+    -fx-padding: 3px 3px 3px 25px;
+    -fx-text-inner-color:#fff;
+}
+.button{
+    -fx-background-color: #2c6eb5;
+    -fx-cursor: hand;
+    -fx-text-fill: #fff;
+    
+}
+.button:hover{
+    -fx-background-color: #5aa0ea;
+
+}
+#home{
+    -fx-background-color:#fff;
+    -fx-background-radius: 50px;
+    -fx-cursor: hand;
+}
+#home:hover{
+    -fx-background-color: #C73042;
+
+
+}
